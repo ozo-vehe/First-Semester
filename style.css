@@ -8,6 +8,7 @@
   --btn-blue: #0065FE;
   --text-blue: #005AE2;
   --text-black: #141414;
+  --gray-color: #F9FBFD;
 }
 
 /* Default Button */
@@ -48,7 +49,7 @@ body {
 }
 
 
-/* Header */
+/* HEADER */
 header {
   padding: 12px 10% 0px;
   min-height: 100vh;
@@ -148,7 +149,7 @@ h1 .colorBlue img {
   height: 250px;
   border-radius: 24px;
   margin: 0px auto;
-  background: linear-gradient(to right, #eeeeee, #ffffff);
+  background: linear-gradient(to right, #f0f0f0, #ffffff00);
 }
 
 .heroImageSecondImage {
@@ -169,10 +170,138 @@ h1 .colorBlue img {
 }
 .secondImage {
   margin-top: 5%;
+  margin-bottom: 0px;
 }
 .secondImage img {
   width: 100%;
 }
 /* hero section ends here */
 
-/* Header Ends Here */
+/* HEADER ENDS HERE */
+
+/* ABOUT SECTION */
+.aboutWrapper {
+  margin-top: -4px;
+}
+
+.aboutHeader {
+  margin: 0px;
+  padding: 10px 10%;
+  background: var(--gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutHeader h2 {
+  width: 200px;
+  font-family: "Gilroy-Bold";
+}
+
+/* ratings */
+.ratings {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.activeUsers {
+  width: 150px;
+}
+.activeUsers h3 {
+  margin: 0px 0px;
+  font-family: "Gilroy-Bold";
+}
+.activeUsers p {
+  margin: 5px 0px;
+}
+/* ratings ends here */
+
+/* about content wrapper */
+.aboutContentWrapper {
+  padding: 20px 10%;
+  margin: 7% 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.firstAboutContent {
+  width: 350px;
+}
+.firstAboutContent h2 {
+  position: relative;
+  font-family: "Gilroy-Bold";
+  font-size: 1.9rem;
+  padding-left: 10px;
+  margin: 0px 0px 10px;
+}
+.firstAboutContent h2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #222222, #f8f8f8);
+}
+.firstAboutContent p {
+  margin-top: 10px;
+  padding-left: 15px;
+  line-height: 1.5;
+}
+
+.secondAboutContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  width: 650px;
+}
+.service {
+  width: 300px;
+}
+
+.serviceImage img {
+  border: thin solid var(--gray-color);
+  border-radius: 50%;
+  padding: 10px;
+  background: var(--gray-color);
+  background: #3284ff23;
+}
+
+.serviceText h3 {
+  font-family: "Gilroy-Bold";
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.serviceText p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+/* about content wrapper ends here */
+
+/* ABOUT SECTION ENDS HERE */
+
+/* SUBSCRIPTION SECTION */
+.subscriptionWrapper {
+  border: thin solid red;
+}
+.firstAboutContent h2 {
+  position: relative;
+  font-family: "Gilroy-Bold";
+  font-size: 1.9rem;
+  padding-left: 10px;
+  margin: 0px 0px 10px;
+}
+.firstAboutContent h2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #222222, #f8f8f8);
+}
+/* SUBSCRIPTION SECTION ENDS HERE */
