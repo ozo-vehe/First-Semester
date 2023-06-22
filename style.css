@@ -10,6 +10,30 @@
   --text-black: #141414;
 }
 
+/* Default Button */
+button {
+  min-width: 150px;
+  padding: 16px 31px;
+  border-radius: 100px;
+}
+.whiteBtn {
+  border: none;
+  color: var(--btn-blue);
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+.blueBtn {
+  border: none;
+  color: #fff;
+  background: var(--btn-blue);
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+/* Ends Here */
+
 body {
   margin: 0px;
   padding: 0px;
@@ -26,9 +50,8 @@ body {
 
 /* Header */
 header {
-  padding: 12px 10%;
+  padding: 12px 10% 0px;
   min-height: 100vh;
-  border: thin solid red;
   background-image: url("./assets/images/aurora.png");
 }
 
@@ -75,24 +98,6 @@ nav {
 .navMenu li a:hover {
   color: var(--btn-blue);
 }
-
-.navBtn button {
-  border: none;
-  color: var(--btn-blue);
-  background: none;
-  font-size: inherit;
-  font-family: inherit;
-  cursor: pointer;
-}
-.navBtn button:last-child {
-  margin-left: 20px;
-  background: var(--btn-blue);
-  color: #fff;
-  padding: 16px 31px;
-  border-radius: 100px;
-  font-size: inherit;
-  font-family: inherit;
-}
 /* navigation ends here */
 
 /* hero section */
@@ -102,7 +107,6 @@ nav {
 .heroSectionContentWrapper {
   margin-top: 5%;
 }
-
 
 .heroSectionText {
   padding: 0px 50px;
@@ -121,6 +125,53 @@ h1 .colorBlue img {
 .heroSectionText p {
   width: 650px;
   margin: 10px auto 30px;
+}
+
+.heroSectionBtn {
+  margin: 5% 0px;
+}
+
+.heroSectionImage {
+  margin-top: 5%;
+}
+
+.firstImage {
+  position: relative;
+  padding: 0px 7%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: thin solid #b8b8b8;
+  width: 600px;
+  height: 250px;
+  border-radius: 24px;
+  margin: 0px auto;
+  background: linear-gradient(to right, #eeeeee, #ffffff);
+}
+
+.heroImageSecondImage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  height: 110%;
+  width: 260px;
+  z-index: -1;
+}
+
+.firstImage p {
+  box-sizing: border-box;
+  width: 450px;
+  margin: 0px auto;
+  padding: 0px 40px;
+}
+.secondImage {
+  margin-top: 5%;
+}
+.secondImage img {
+  width: 100%;
 }
 /* hero section ends here */
 
