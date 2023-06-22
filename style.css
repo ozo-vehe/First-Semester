@@ -483,7 +483,6 @@ h1 .colorBlue img {
 /* FAQ SECTION */
 .faqWrapper {
   position: relative;
-  border: thin solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -559,3 +558,45 @@ h1 .colorBlue img {
   width: 20px;
 }
 /* FAQ SECTION ENDS HERE */
+
+/* GET STARTED SECTION */
+.getStartedWrapper {
+  height: 300px;
+  position: relative;
+  background: var(--subs-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.getStartedBgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.getStartedBgImage img {
+  height: 100%;
+}
+.getStartedBgImage .firstBgImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.getStartedBgImage .secondBgImage {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.getStartedWrapper h2 {
+  z-index: 2;
+  font-size: 2rem;
+  font-family: "Gilroy-Bold";
+}
+.getStartedWrapper button {
+  min-width: 200px;
+}
+/* GET STARTED SECTION ENDS HERE */
