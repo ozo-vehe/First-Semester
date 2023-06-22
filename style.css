@@ -378,3 +378,184 @@ h1 .colorBlue img {
   min-width: 200px;
 }
 /* SUBSCRIPTION SECTION ENDS HERE */
+
+/* TRIM URL SECTION */
+.trimURLFormWrapper {
+  background: var(--subs-color);
+  position: relative;
+  height: 500px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trimURLFormBgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.trimURLFormBgImage img {
+  height: 100%;
+}
+.trimURLFormBgImage .firstBgImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.trimURLFormBgImage .secondBgImage {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* trim url form */
+.trimURLForm {
+  background: #fff;
+  box-sizing: inherit;
+  border-radius: 12px;
+  width: 470px;
+  padding: 20px 40px;
+  z-index: 1;
+}
+.urlInput {
+  overflow: hidden;
+  margin: 20px 0px;
+  border-radius: 12px;
+  height: 50px;
+  width: 100%;
+  border: thin solid var(--text-blue)
+}
+.urlInput input {
+  height: 100%;
+  border-radius: inherit;
+  outline: none;
+  border: none;
+  color: var(--text-blue);
+  padding-left: 20px;
+  font-family: "Gilroy";
+}
+
+.domainInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin: 20px 0px;
+}
+.domainInput select {
+  height: 55px;
+  width: 53%;
+  border-radius: 12px;
+  outline: none;
+  border: thin solid var(--text-blue);
+  color: var(--text-blue);
+  padding: 0px 20px;
+  font-family: "Gilroy";
+}
+.domainInput input {
+  height: 55px;
+  width: 40%;
+  border-radius: 12px;
+  outline: none;
+  border: thin solid var(--text-blue);
+  color: var(--text-blue);
+  padding-left: 20px;
+  font-family: "Gilroy";
+}
+
+.formBtn button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gilroy";
+}
+
+.trimURLForm p {
+  color: var(--text-blue);
+  margin-top: 25px;
+}
+/* trim url form ends here */
+/* TRIM URL SECTION ENDS HERE */
+
+/* FAQ SECTION */
+.faqWrapper {
+  position: relative;
+  border: thin solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.faqBgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.faqBgImage img {
+  height: 100%;
+}
+.faqBgImage .firstBgImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+}
+.faqBgImage .secondBgImage {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 400px;
+  height: 400px;
+}
+
+.faqWrapper h2 {
+  width: fit-content;
+  position: relative;
+  font-family: "Gilroy-Bold";
+  font-size: 1.9rem;
+  padding-left: 15px;
+  margin: 30px auto;
+}
+.faqWrapper h2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #222222, #f8f8f8);
+}
+
+.questionsWrappper {
+  width: 650px;
+  background: #fff;
+  z-index: 2;
+  margin-bottom: 7%;
+}
+.questionContent {
+  border-bottom: thin solid var(--border-color);
+  padding: 10px 0px;
+  margin: 15px 0px;
+}
+.question {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.question p {
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 0px;
+}
+.question img {
+  cursor: pointer;
+  width: 20px;
+}
+/* FAQ SECTION ENDS HERE */
