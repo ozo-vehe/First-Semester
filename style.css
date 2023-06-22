@@ -1,7 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/gilroy-bold");
 @font-face {
   font-family: "Gilroy";
-  src: url("./assets/fonts/Gilroy-Light.otf");
+  src: url("./assets/fonts/Gilroy-Regular.otf");
 }
 
 * {
@@ -96,7 +96,7 @@ nav {
   text-decoration: none;
   color: var(--text-black);
   transition: all 0.3s;
-  font-weight: 600;
+  font-weight: 500;
 }
 .navMenu li a:hover {
   color: var(--btn-blue);
@@ -291,6 +291,7 @@ h1 .colorBlue img {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 0px 10%;
 }
 
 .subscritionHeader {
@@ -384,7 +385,7 @@ h1 .colorBlue img {
   background: var(--subs-color);
   position: relative;
   height: 500px;
-  padding: 20px 10px;
+  padding: 20px 10%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -487,7 +488,7 @@ h1 .colorBlue img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 10px;
+  padding: 0px 10%;
 }
 
 .faqBgImage {
@@ -561,6 +562,7 @@ h1 .colorBlue img {
 
 /* GET STARTED SECTION */
 .getStartedWrapper {
+  padding: 0px 10%;
   height: 300px;
   position: relative;
   background: var(--subs-color);
@@ -600,3 +602,88 @@ h1 .colorBlue img {
   min-width: 200px;
 }
 /* GET STARTED SECTION ENDS HERE */
+
+/* FOOTER SECTION */
+footer {
+  position: relative;
+  padding: 50px 0px 0px;
+}
+
+.footerBgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.footerBgImage .firstBgImage {
+  position: absolute;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+.footerBgImage .secondBgImage {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.footerContentWrapper {
+  padding: 10px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footerLogoContent {
+  width: 170px;
+}
+.footerLogo {
+  margin-bottom: 20px;
+}
+.footerSocials {
+  display: flex;
+  padding-left: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerMainContent {
+  width: 800px;
+}
+.footerContents {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.content {
+  width: 180px;
+  margin: 0px;
+}
+
+.content ul {
+  padding: 0px;
+  margin-top: 10px;
+}
+.content ul li {
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.footerCopywrite {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 10%;
+}
+.footerCopywrite p:nth-child(2) {
+  border-left: 2px solid var(--border-color);
+  border-right: 2px solid var(--border-color);
+  padding: 0px 10px;
+}
+/* FOOTER SECTION ENDS HERE */
