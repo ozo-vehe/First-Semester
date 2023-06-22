@@ -1,0 +1,127 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@font-face {
+  font-family: "Gilroy";
+  src: url("./assets/fonts/Gilroy-Light.otf");
+}
+
+* {
+  --btn-blue: #0065FE;
+  --text-blue: #005AE2;
+  --text-black: #141414;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Gilroy";
+  color: var(--text-black);
+  box-sizing: border-box;
+}
+.colorBlue {
+  color: var(--text-blue);
+  position: relative;
+}
+
+
+/* Header */
+header {
+  padding: 12px 10%;
+  min-height: 100vh;
+  border: thin solid red;
+  background-image: url("./assets/images/aurora.png");
+}
+
+/* navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navImage {
+  width: 155px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navMenu {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px 40px;
+}
+.navMenu li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 2px 5px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+.navMenu li img {
+  margin-top: 4px;
+}
+.navMenu li a {
+  text-decoration: none;
+  color: var(--text-black);
+  transition: all 0.3s;
+  font-weight: 600;
+}
+.navMenu li a:hover {
+  color: var(--btn-blue);
+}
+
+.navBtn button {
+  border: none;
+  color: var(--btn-blue);
+  background: none;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+.navBtn button:last-child {
+  margin-left: 20px;
+  background: var(--btn-blue);
+  color: #fff;
+  padding: 16px 31px;
+  border-radius: 100px;
+  font-size: inherit;
+  font-family: inherit;
+}
+/* navigation ends here */
+
+/* hero section */
+.heroSectionWrapper {
+  text-align: center;
+}
+.heroSectionContentWrapper {
+  margin-top: 5%;
+}
+
+
+.heroSectionText {
+  padding: 0px 50px;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 2;
+  font-family: "Gilroy-Bold";
+}
+h1 .colorBlue img {
+  position: absolute;
+  bottom: -15px;
+  left: 45%;
+  transform: translateX(-50%);
+}
+.heroSectionText p {
+  width: 650px;
+  margin: 10px auto 30px;
+}
+/* hero section ends here */
+
+/* Header Ends Here */
