@@ -9,6 +9,8 @@
   --text-blue: #005AE2;
   --text-black: #141414;
   --gray-color: #F9FBFD;
+  --subs-color: #1E3448;
+  --border-color: #b8b8b8;
 }
 
 /* Default Button */
@@ -144,7 +146,7 @@ h1 .colorBlue img {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  border: thin solid #b8b8b8;
+  border: thin solid var(--border-color);
   width: 600px;
   height: 250px;
   border-radius: 24px;
@@ -286,16 +288,23 @@ h1 .colorBlue img {
 
 /* SUBSCRIPTION SECTION */
 .subscriptionWrapper {
-  border: thin solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.firstAboutContent h2 {
+
+.subscritionHeader {
+  text-align: center;
+}
+.subscritionHeader h2 {
+  width: fit-content;
   position: relative;
   font-family: "Gilroy-Bold";
   font-size: 1.9rem;
-  padding-left: 10px;
-  margin: 0px 0px 10px;
+  padding-left: 15px;
+  margin: 0px auto 10px;
 }
-.firstAboutContent h2::after {
+.subscritionHeader h2::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -303,5 +312,69 @@ h1 .colorBlue img {
   width: 3px;
   height: 100%;
   background: linear-gradient(to bottom, #222222, #f8f8f8);
+}
+.subscritionHeader p {
+  width: 530px;
+  margin: 5px auto;
+}
+
+.subscriptionPricesWrapper{
+  margin: 50px 0px;
+}
+.subscriptions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.subscription {
+  position: relative;
+  font-size: 0.8rem;
+  box-shadow: 0px 0px 3px var(--border-color);
+  box-sizing: border-box;
+  padding: 60px 50px;
+  width: 300px;
+  min-height: 455px;
+  border-radius: 12px;
+  transition: all 0.3s;
+  background: #fff;
+  cursor: pointer;
+}
+.subscription p {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+.subscriptionPrice {
+  font-family: "Gilroy-Bold";
+  font-size: 2rem;
+  margin: 10px 0px 0px;
+}
+.subscription ul {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.subscription ul li {
+  list-style: none;
+  margin: 25px 0px;
+}
+.activeSubscription {
+  color: #fff;
+  transform: scale(1.2);
+  background: var(--subs-color);
+  z-index: 2;
+}
+
+.subscriptionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 120px 0px 50px;
+}
+.subscriptionBtn button {
+  border: thin solid var(--btn-blue);
+  min-width: 200px;
 }
 /* SUBSCRIPTION SECTION ENDS HERE */
