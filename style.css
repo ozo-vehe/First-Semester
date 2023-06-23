@@ -13,6 +13,15 @@
   --border-color: #b8b8b8;
 }
 
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-family: "Gilroy";
+  color: var(--text-black);
+  box-sizing: border-box;
+}
+
 /* Default Button */
 button {
   min-width: 150px;
@@ -37,14 +46,6 @@ button {
 }
 /* Ends Here */
 
-body {
-  margin: 0px;
-  padding: 0px;
-  font-size: 16px;
-  font-family: "Gilroy";
-  color: var(--text-black);
-  box-sizing: border-box;
-}
 .colorBlue {
   color: var(--text-blue);
   position: relative;
@@ -56,13 +57,14 @@ header {
   padding: 12px 10% 0px;
   min-height: 100vh;
   background-image: url("./assets/images/aurora.png");
+  background-repeat: no-repeat;
 }
 
 /* navigation */
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /*justify-content: center*/
   flex-wrap: wrap;
 }
 
@@ -85,7 +87,7 @@ nav {
   cursor: pointer;
   padding: 2px 5px;
   display: flex;
-  gap: 3px;
+  gap: 7px 3px;
   align-items: center;
   justify-content: center;
 }
@@ -191,17 +193,21 @@ h1 .colorBlue img {
   padding: 10px 10%;
   background: var(--gray-color);
   display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 .aboutHeader h2 {
-  width: 200px;
+  font-size: 1.9rem;
+  width:fit-content;
   font-family: "Gilroy-Bold";
 }
 
 /* ratings */
 .ratings {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   align-items: flex-start;
   justify-content: space-between;
@@ -236,7 +242,7 @@ h1 .colorBlue img {
   position: relative;
   font-family: "Gilroy-Bold";
   font-size: 1.9rem;
-  padding-left: 10px;
+  padding-left: 20px;
   margin: 0px 0px 10px;
 }
 .firstAboutContent h2::after {
@@ -286,15 +292,21 @@ h1 .colorBlue img {
 
 /* ABOUT SECTION ENDS HERE */
 
+
 /* SUBSCRIPTION SECTION */
 .subscriptionWrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 0px 10%;
 }
 
 .subscritionHeader {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .subscritionHeader h2 {
@@ -302,7 +314,7 @@ h1 .colorBlue img {
   position: relative;
   font-family: "Gilroy-Bold";
   font-size: 1.9rem;
-  padding-left: 15px;
+  padding-left: 30px;
   margin: 0px auto 10px;
 }
 .subscritionHeader h2::after {
@@ -325,6 +337,7 @@ h1 .colorBlue img {
 .subscriptions {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
   justify-content: center;
 }
@@ -359,6 +372,12 @@ h1 .colorBlue img {
   list-style: none;
   margin: 25px 0px;
 }
+/* .subscription:hover {
+  color: #fff;
+  transform: scale(1.2);
+  background: var(--subs-color);
+  z-index: 2;
+} */
 .activeSubscription {
   color: #fff;
   transform: scale(1.2);
@@ -380,6 +399,7 @@ h1 .colorBlue img {
 }
 /* SUBSCRIPTION SECTION ENDS HERE */
 
+
 /* TRIM URL SECTION */
 .trimURLFormWrapper {
   background: var(--subs-color);
@@ -398,6 +418,7 @@ h1 .colorBlue img {
 }
 .trimURLFormBgImage img {
   height: 100%;
+  /* width: 100%; */
 }
 .trimURLFormBgImage .firstBgImage {
   position: absolute;
@@ -481,11 +502,13 @@ h1 .colorBlue img {
 /* trim url form ends here */
 /* TRIM URL SECTION ENDS HERE */
 
+
 /* FAQ SECTION */
 .faqWrapper {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   padding: 0px 10%;
@@ -514,7 +537,10 @@ h1 .colorBlue img {
   height: 400px;
 }
 
-.faqWrapper h2 {
+.faqHeaderText {
+  width: 100%;
+}
+.faqHeaderText h2 {
   width: fit-content;
   position: relative;
   font-family: "Gilroy-Bold";
@@ -522,7 +548,7 @@ h1 .colorBlue img {
   padding-left: 15px;
   margin: 30px auto;
 }
-.faqWrapper h2::after {
+.faqHeaderText h2::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -534,7 +560,7 @@ h1 .colorBlue img {
 
 .questionsWrappper {
   width: 650px;
-  background: #fff;
+  background: #ffffff3b;
   z-index: 2;
   margin-bottom: 7%;
 }
@@ -560,17 +586,19 @@ h1 .colorBlue img {
 }
 /* FAQ SECTION ENDS HERE */
 
+
 /* GET STARTED SECTION */
 .getStartedWrapper {
   padding: 0px 10%;
   height: 300px;
   position: relative;
+  width: 100%;
+  box-sizing: border-box;
   background: var(--subs-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   color: #fff;
 }
 
@@ -594,19 +622,25 @@ h1 .colorBlue img {
 }
 
 .getStartedWrapper h2 {
+  width: 100%;
+  text-align: center;
   z-index: 2;
   font-size: 2rem;
   font-family: "Gilroy-Bold";
 }
 .getStartedWrapper button {
   min-width: 200px;
+  margin: 0px;
 }
 /* GET STARTED SECTION ENDS HERE */
+
 
 /* FOOTER SECTION */
 footer {
   position: relative;
   padding: 50px 0px 0px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .footerBgImage {
@@ -687,3 +721,120 @@ footer {
   padding: 0px 10px;
 }
 /* FOOTER SECTION ENDS HERE */
+
+
+/* MEDIA QUERRIES */
+@media screen and (max-width: 700px) {
+  /* navigation */
+  nav {
+    justify-content: center;
+  }
+
+  .navMenu {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+  .navBtn {
+    margin-top: 15px;
+  }
+  /* navigation ends here */ 
+
+  /* hero section */
+  .heroSectionWrapper {
+    text-align: center;
+  }
+  .heroSectionContentWrapper {
+    margin-top: 5%;
+  }
+
+  .heroSectionText {
+    padding: 0px 10px;
+    display: flex;
+    flex-wrap: wrap
+  }
+  h1 {
+    line-height: 1.4;
+  }
+
+  .heroSectionImage {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .firstImage {
+    width: 100%;
+    padding: 20px 10px;
+    height: auto;
+    background: linear-gradient(to right, #f0f0f0, #ffffff00);
+  }
+
+  .heroImageFirstImage {
+    width: 100%;
+  }
+
+  .heroImageSecondImage {
+    width: 45%;
+  }
+
+  .firstImage p {
+    width: auto;
+    padding: 0px;
+  }
+  
+  .secondImage {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .secondImage img {
+    width: 100%;
+  }
+  /* hero section ends here */
+
+  /* HEADER ENDS HERE */
+
+
+  /* ABOUT SECTION */
+
+  /* about content wrapper */
+  .secondAboutContent {
+    justify-content: center;
+  }
+  .service {
+    width: 300px;
+  }
+  /* about content wrapper ends here */
+
+  /* ABOUT SECTION ENDS HERE */
+
+
+  /* TRIM URL SECTION */
+  .trimURLFormBgImage img {
+    height: 100%;
+    width: 100%;
+  }
+  /* trim url form */
+  .trimURLForm {
+    padding: 20px;
+  }
+  .trimURLForm p {
+    text-align: center;
+  }
+  /* trim url form ends here */
+  /* TRIM URL SECTION ENDS HERE */
+
+  /* GET STARTED SECTION */
+  .getStartedBgImage img {
+    width: 100%;
+  }
+  /* GET STARTED SECTION ENDS HERE */
+
+
+  /* FOOTER SECTION */
+  .content {
+    width: 150px;
+  }
+  /* FOOTER SECTION ENDS HERE */
+}
