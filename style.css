@@ -54,7 +54,7 @@ button {
 
 /* HEADER */
 header {
-  padding: 12px 10% 0px;
+  /* padding: 12px 10% 0px; */
   min-height: 100vh;
   background-image: url("./assets/images/aurora.png");
   background-repeat: no-repeat;
@@ -62,6 +62,7 @@ header {
 
 /* navigation */
 nav {
+  padding: 12px 10%;
   display: flex;
   align-items: center;
   justify-content: space-between; /*justify-content: center*/
@@ -115,6 +116,9 @@ nav {
 
 .heroSectionText {
   padding: 0px 50px;
+  margin: 0px 10%;
+  display: flex;
+  flex-wrap: wrap;
 }
 h1 {
   font-size: 2.5rem;
@@ -129,11 +133,13 @@ h1 .colorBlue img {
 }
 .heroSectionText p {
   width: 650px;
+  box-sizing: border-box;
   margin: 10px auto 30px;
 }
 
 .heroSectionBtn {
   margin: 5% 0px;
+  width: 100%;
 }
 
 .heroSectionImage {
@@ -174,6 +180,7 @@ h1 .colorBlue img {
 }
 .secondImage {
   margin-top: 5%;
+  width: 100%;
   margin-bottom: 0px;
 }
 .secondImage img {
@@ -767,6 +774,8 @@ footer {
   .firstImage {
     width: 100%;
     padding: 20px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     height: auto;
     background: linear-gradient(to right, #f0f0f0, #ffffff00);
   }
