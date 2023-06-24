@@ -238,8 +238,8 @@ h1 .colorBlue img {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px 40px;
 }
 
 .firstAboutContent {
@@ -302,8 +302,11 @@ h1 .colorBlue img {
 
 /* SUBSCRIPTION SECTION */
 .subscriptionWrapper {
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   padding: 0px 10%;
 }
@@ -311,13 +314,16 @@ h1 .colorBlue img {
 .subscritionHeader {
   width: 100%;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.subscritionHeader h2 {
+
+.headerText {
+  width: 100%;
+}
+.headerText h2 {
   width: fit-content;
   position: relative;
   font-family: "Gilroy-Bold";
@@ -732,7 +738,7 @@ footer {
 
 
 /* MEDIA QUERRIES */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   /* navigation */
   nav {
     justify-content: center;
